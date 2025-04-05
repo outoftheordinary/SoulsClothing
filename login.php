@@ -45,11 +45,13 @@ if(isset($_POST['login'])){
                 <form method="post" action="login.php">
                     <fieldset>
                         <legend> Log In </legend>
-                        <input type="text" id="uname" name="uname" placeholder="Username" required>
+                        <input type="text" id="uname" name="uname" placeholder="Username" required style="color: #FFF8F0; padding: 5px; border-radius: 5px; margin:15px;">
                         <br> <br>
-                        <input type="password" id="pass" name="pass" placeholder="Password" required>
+                        <input type="password" id="pass" name="pass" placeholder="Password" required style="color: #FFF8F0; padding: 5px; border-radius: 5px; margin:15px;">
                         <br> <br>
-                        <input type="submit" name="login"> 
+                        <input type="submit" name="login" style="background-color: #D72638; color: #FFF8F0; padding: 5px; border-radius: 5px; margin:15px;">
+                        <p> or </p>
+                        <button id="register" style="background-color: #D72638; color: #FFF8F0; padding: 5px; border-radius: 5px; margin:15px;"> <a href="register.php" style="text-decoration: none; color: #FFF8F0;"> Register </a> </button> 
                     </fieldset>
                 </form>
             </div>

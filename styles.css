@@ -26,11 +26,12 @@ fieldset{
  border: 0;   
 }
 
-input:nth-of-type(1),input:nth-of-type(2) {
-    border-width: 0 0 1px 0;
-    border-color: black;
-    width: 100%;
-    background-color: rgba(1,0,0,0);
+input[type="password"], input[type="text"]{
+    background-color: #3B1F1F;
+    color: #FFF8F0; 
+    padding: 5px; 
+    border-radius: 5px; 
+    margin:15px;
 }
 
 .pic{
