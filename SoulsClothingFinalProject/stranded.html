@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranded Sweatshirt</title>
+    <link rel="stylesheet" href="collections.css">
+    <link rel="icon" type="image/x-icon" href="images/soulslogo.png">
+</head>
+
+<body>
+    <header>
+        <h1>Soul's Collections</h1>
+    </header>
+    <nav>
+        <ul>
+            <li id="left"> <a href="homepage.html"> <img src="images/soulslogo.png" style="width:50px;height:auto;"
+                        alt="Soul's Clothing Logo"> </a> </li>
+            <li> <a href="collections.html#onepiece"> One Piece </a> </li>
+            <li> <a href="collections.html#yearn"> Yearn </a> </li>
+            <li> <a href="collections.html#stranded"> Stranded </a> </li>
+            <li> <a href="collections.html#eaten"> Eaten </a> </li>
+            <li id="right"> <a href="cart.php"> <img src="images/cart.png" height="50px" alt="Cart icon"> </a>
+        </ul>
+    </nav>
+    <main>
+        <figure class="product">
+            <img src="images/stranded_sweatshirt_front.png" alt="Stranded Sweatshirt"
+                onmouseover="this.src='images/stranded_sweatshirt_back.png'"
+                onmouseleave="this.src='images/stranded_sweatshirt_front.png'">
+            <figcaption>Stranded Sweatshirt</figcaption>
+        </figure>
+        <div class="description">
+            <p>You're stranded in the rain, but at least
+                you have our waterproof stranded
+                sweatshirt to keep you company</p>
+            <div class="item-form">
+                <form action="createOrder.php" method="POST" role="form"
+                    aria-description="form selection for Stranded Sweatshirt">
+                    <input type="hidden" name="items" value="Stranded Sweatshirt">
+                    <label for="item" name="Stranded Sweatshirt">Stranded Sweatshirt</label>
+                    <br><br>
+                    <label for="size">Size</label>
+                    <br><br>
+                    <input type="radio" name="size" id="small" value="s" role="radio"
+                        aria-description="radio button to pick small Stranded Sweatshirt" required>
+                    <label for="small">S</label>
+                    <input type="radio" name="size" id="medium" value="m" role="radio"
+                        aria-description="radio button to pick medium Stranded Sweatshirt" required>
+                    <label for="medium">M</label>
+                    <input type="radio" name="size" id="large" value="l" role="radio"
+                        aria-description="radio button to pick large Stranded Sweatshirt" required>
+                    <label for="large">L</label>
+                    <br><br>
+                    <label for="color">Color</label>
+                    <br><br>
+                    <input type="radio" name="color" id="black" value="black" role="radio"
+                        aria-description="radio button to pick black Stranded Sweatshirt" required>
+                    <label for="black">Black</label>
+                    <input type="radio" name="color" id="white" value="white" role="radio"
+                        aria-description="radio button to pick white Stranded Sweatshirt" required>
+                    <label for="white">White</label>
+                    <br><br>
+                    <label for="price" name="price">Price: $45.99</label>
+                    <br><br>
+                    <input type="submit" name="submit" value="ADD TO CART" role="button"
+                        aria-description="button to add Stranded Sweatshirt to cart">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

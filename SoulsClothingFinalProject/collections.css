@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+:root {
+    --crimson: #D72638;
+    --ivory: #FFF8F0;
+    --charcoal: #2E2E2E;
+    --rosewood: #710000;
+    --clay: #C97C5D;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3B1F1F;
+    color: var(--ivory);
+    font-family: 'Dosis', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--crimson);
+    color: var(--ivory);
+    font-family: 'Dosis', sans-serif;
+}
+
+nav {
+    background-color: var(--rosewood);
+    color: var(--ivory);
+    padding: 5px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--ivory);
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+#wrapper {
+    padding: 10px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+figure {
+    background-color: #893838;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.items figure img {
+    height: 250px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 60%;
+    color: var(--ivory);
+    text-align: center;
+    border: 1px solid var(--ivory);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--ivory);
+}
+
+th {
+    background-color: var(--rosewood);
+    color: var(--ivory);
+}
+
+tr:last-child {
+    background-color: var(--rosewood);
+    color: var(--ivory);
+}
+
+button {
+    background-color: var(--rosewood);
+    color: var(--ivory);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 15px;
+    float: right;
+}
+
+.confirmation {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*to format the create account form*/
+.account-form {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.account-form label {
+    float: left;
+}
+
+.account-head {
+    text-align: center;
+}
+
+/*item page css*/
+.item-form {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+
+    width: 30%;
+    height: auto;
+}
+
+.product img {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*homepage css*/
+.button {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
+
+
+.viewButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.collectionsPageFigure {
+    display: flex;
+    flex-direction: column;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (min-width:600px) {
+
+    figure {
+        float: left;
+    }
+
+    .description {
+        float: right;
+    }
+
+    .account-form {
+        border: 3px solid var(--ivory);
+        padding: 15px;
+    }
+
+    .item-form {
+        margin: auto;
+        width: 100%;
+        border: 3px solid red;
+        padding: 10px;
+    }
+}
