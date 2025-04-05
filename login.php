@@ -11,12 +11,14 @@ if(isset($_POST['login'])){
     $stmt->execute(['username' => $enteredUsername]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($user && $user['Password'] === $enteredPassword) {
+    if(!$user) {
+        echo "<script>alert('User not found, please register!');</script>";
+    } else if($user['Password'] !== $enteredPassword) {
+        echo "<script>alert('Wrong username or password, please try again!');</script>";
+    } else {
         $_SESSION['username'] = $enteredUsername;
         header('Location: homepage.php');
         exit();
-    } else {
-        echo "<script>console.log('Wrong username and password');</script>";
     }
 }
 ?>
